@@ -1,0 +1,36 @@
+
+.form{
+    width:50vw;
+    margin:auto;
+    margin-top:2rem;
+    margin-bottom:4rem;
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.form input{
+    margin-bottom:1.5rem;
+    border-top:none;
+    border-right:none;
+    border-left:none;
+    border-color: lightblue;
+   
+}
+
+input:focus{
+    outline:none;
+}
+
+.button{
+    height:2rem;
+    width:40%;
+    background-color: darkblue;
+    font-size:20px;
+    margin:auto;
+    color:white;
+}
+
+.button:hover{
+    background-color: blue;
+}

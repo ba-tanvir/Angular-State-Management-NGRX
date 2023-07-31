@@ -1,0 +1,45 @@
+*{
+    overflow: hidden;
+    margin:auto;
+}
+
+.container{
+    width:90vw;
+    height:auto;
+    padding:2rem;
+    margin-bottom: 1rem;
+    background-color:#1B1B1B;
+    text-align: center;
+}
+
+.name{
+    color:white;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.p{
+    color:whitesmoke;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.button{
+    margin:5px;
+    width:80px;
+    height:40px;
+    border:none;
+    border-radius:10px;
+    background-color: aqua;
+}
+
+.button:hover{
+    background-color: blue;
+    color:white;
+}
+
+.link{
+    width:80px;
+    height:40px;
+    border:none;
+}

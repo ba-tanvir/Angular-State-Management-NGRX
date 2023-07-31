@@ -1,0 +1,11 @@
+<form (ngSubmit)="onSubmit()">
+    <div class="form">
+        <h3>Create a Movie: - </h3>
+        <input placeholder="id" type="number" [(ngModel)]="movie.id" name="id">
+        <input placeholder="Name" type="text" [(ngModel)]="movie.name" name="name">
+        <input placeholder="genre" type="text" [(ngModel)]="movie.genre" name="genre">
+        <input placeholder="realease_year" type="text" [(ngModel)]="movie.release_year" name="release_year">
+        <input placeholder="Director" type="text" [(ngModel)]="movie.director" name="director">
+        <button class="button" type="submit">Create Movie</button>
+    </div>
+</form>

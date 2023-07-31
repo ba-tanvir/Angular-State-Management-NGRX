@@ -1,0 +1,10 @@
+<div *ngFor="let movie of movie_data$ | async" class="container" >
+    <h3 class="name">{{movie.name}}</h3>
+    <p class="p">Released at: {{movie.release_year}}</p>
+    <p class="p">Genre: {{movie.genre}}</p>
+    <p class="p">Director: {{movie.director}}</p>
+   <button class="button"(click)="details_movie(movie)">Details</button>
+    <button class="button" (click)="delete_button(movie.id)">Delete</button>
+    <!-- <button class="button" (click)="update_movie(movie)">Update</button> -->
+</div>
+

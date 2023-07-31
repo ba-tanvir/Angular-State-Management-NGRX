@@ -1,0 +1,23 @@
+<div *ngIf="(movie_details$ | async) as movie_details" class="container">
+    <div>
+    <h3 class="name">{{movie_details.name}}</h3>
+    <p class="p">Released at: {{movie_details.release_year}}</p>
+    <p class="p">Genre: {{movie_details.genre}}</p>
+    <p class="p">Director: {{movie_details.director}}</p>
+    <button class="button" (click)="update_button()">Edit</button>
+    </div> 
+
+    <div>
+    <form (ngSubmit)="onSubmit_update()"> 
+        <div *ngIf="update_active && before_update" class="update_form" >
+            <input placeholder="id" type="number" [(ngModel)]="movie_update.id" [(ngModel)]="before_update.id" disabled name="id">
+            <input placeholder="Name" type="text" [(ngModel)]="movie_update.name" [(ngModel)]="before_update.name" name="name">
+            <input placeholder="Genre" type="text" [(ngModel)]="movie_update.genre" [(ngModel)]="before_update.genre" name="genre">
+            <input placeholder="Realease_year" type="text" [(ngModel)]="movie_update.release_year" [(ngModel)]="before_update.release_year"  name="release_year">
+            <input placeholder="Director" type="text" [(ngModel)]="movie_update.director" [(ngModel)]="before_update.director" name="director">
+            <button class="button" type="submit">Update</button>
+        </div>
+    </form>
+</div>
+</div>
+
