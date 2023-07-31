@@ -1,6 +1,20 @@
-# FullStackDemo
+# NGRX- CRUD
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.11.
+This application uses NGRX for state management. The application implements CRUD operation from backend data. 
+
+# Technologies Used: 
+
+* Angular.js
+* Angular (NGRX)
+* Angular (RXJS)
+* Angular Material
+
+# Structure
+* index.ts -> file containing states and selectors
+* action.ts
+* effect.ts
+* reducer.ts
+
 
 ## Development server
 
